@@ -1,0 +1,6 @@
+body {
+    background-image: url("../Frontend/images/niñoconperro.jpg") ;
+    background-color: rgba(54, 224, 236);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}

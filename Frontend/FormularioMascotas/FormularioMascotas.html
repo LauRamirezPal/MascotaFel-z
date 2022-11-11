@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Mascotas</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-    <form>
-        <label for="nombreDeMascota">Nombre de Mascota:</label>
-        <input type="text" id="nombreDeMascota" name="nombreDeMascota" placeholder="Nombre de Mascota">
-        
-        <label for="nombreDeMascota">Nombre de Mascota:</label>
-        <input type="text" id="nombreDeMascota" name="nombreDeMascota" placeholder="Nombre de Mascota">
 
-        <label for="nombreDeMascota">Nombre de Mascota:</label>
-        <input type="text" id="nombreDeMascota" name="nombreDeMascota" placeholder="Nombre de Mascota">
-    
-        <label for="nombreDeMascota">Nombre de Mascota:</label>
-        <input type="text" id="nombreDeMascota" name="nombreDeMascota" placeholder="Nombre de Mascota">
-    
+<body>
+
+
+
+
+<!--Hay que agregar la barra de botones principales del home-->
+
+
+    <form class="formulario">
+        <h1>Registrar Mascota</h1>
+
+        <label class="inputData" for="nombreDeMascota">Nombre de Mascota:</label><br>
+        <input type="text" id="nombreDeMascota" name="nombreDeMascota" placeholder="ej. Firulais"><br>
+
+        <label class="inputData" for="especie">Especie:</label><br>
+        <input type="radio" id="perro" name="especie" value="perro">
+        <label for="perro">Perro</label>
+        <input type="radio" id="gato" name="especie" value="gato">
+        <label for="gato">Gato</label><br>
+
+        <label class="inputData" for="estado">Estado:</label><br>
+        <input type="text" readonly="readonly" name="estado" value="Pendiente"><br>
+
+        <label class="inputData" for="comentario">Comentario:</label><br>
+        <input type="text" id="comentario" name="comentario"><br>
+
+        <input type="submit" value="Registrar">
+
     </form>
 
 
 </body>
+
 </html>
